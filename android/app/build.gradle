@@ -12,8 +12,9 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
+ 
     namespace = "com.ml.cats_dogs_classifier"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk =   flutter.compileSdkVersion 
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -30,12 +31,21 @@ android {
         applicationId = "com.ml.cats_dogs_classifier"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        minSdk = 23
+        targetSdk = flutter.targetSdkVersion   
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
+   defaultConfig {
+        // Specify the namespace for your app
+             applicationId = "com.ml.cats_dogs_classifier"
 
+        minSdkVersion 23
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
     signingConfigs {
         release {
             keyAlias = keystoreProperties['keyAlias']
@@ -51,6 +61,10 @@ android {
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig = signingConfigs.release
         }
+    }
+    aaptOptions {
+        noCompress 'tflite'
+        noCompress 'lite'
     }
 }
 

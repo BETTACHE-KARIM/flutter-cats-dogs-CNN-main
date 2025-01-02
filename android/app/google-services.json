@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "381543822108",
+    "project_id": "controle-ae59b",
+    "storage_bucket": "controle-ae59b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381543822108:android:1a430c62f3e716a63580d9",
+        "android_client_info": {
+          "package_name": "com.example.controleapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjMGU7x7PB-Y0pg5z2DYqJ6Mwhudv54Ko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
